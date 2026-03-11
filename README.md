@@ -20,7 +20,11 @@
             background: url('images/river-hero.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 150px 20px;
+            padding: 200px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         header h1 {
@@ -52,6 +56,19 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* Section headings */
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Description styling */
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
@@ -65,8 +82,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -74,15 +93,29 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header id="home">
         <h1>Puerto Princesa Subterranean River</h1>
         <p>The New 7 Wonders of Nature</p>
     </header>
 
+    <!-- Description Section -->
+    <section class="bg-light">
+        <div class="container description text-center">
+            <p>
+                Nestled in the heart of Palawan, Philippines, the <strong>Puerto Princesa Subterranean River</strong> is a UNESCO World Heritage Site and one of the <strong>New 7 Wonders of Nature</strong>. 
+                Visitors can explore its majestic limestone karst landscapes and navigate a spectacular underground river that stretches over 8 kilometers. 
+                This natural wonder is home to diverse wildlife, unique cave formations, and pristine tropical surroundings, making it a must-visit destination for nature lovers, adventurers, and eco-tourists.
+            </p>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="container">
         <h2>About the River</h2>
-        <p>The Puerto Princesa Subterranean River National Park is a UNESCO World Heritage Site in Palawan, Philippines. It is famous for its stunning limestone karst landscapes and navigable underground river.</p>
+        <p>
+            The Puerto Princesa Subterranean River flows directly into the South China Sea and is renowned for its remarkable stalactites, stalagmites, and underground cave system. 
+            Tours allow visitors to appreciate its natural beauty while learning about the ecological importance of this protected park.
+        </p>
         <img src="images/river-about.jpg" class="img-fluid rounded" alt="River Image">
     </section>
 
@@ -104,8 +137,40 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <p>
+            This section can showcase interactive projects, research about the river, conservation efforts, or photo essays. 
+            You can also include tables, charts, or embedded multimedia to make it more engaging for viewers.
+        </p>
+        <!-- Example table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Length</td>
+                    <td>8.2 km of underground river</td>
+                </tr>
+                <tr>
+                    <td>UNESCO Status</td>
+                    <td>World Heritage Site</td>
+                </tr>
+                <tr>
+                    <td>Wildlife</td>
+                    <td>Diverse flora and fauna including bats, monkeys, and birds</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="container">
+    <section id="contact" class="bg-light container">
         <h2>Contact</h2>
         <form id="contactForm">
             <div class="mb-3">
@@ -134,7 +199,6 @@
 
     <!-- Custom JS -->
     <script>
-        // Contact form alert
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message!');
