@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My One-Page Website</title>
+    <title>Puerto Princesa Subterranean River</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,11 +15,22 @@
             scroll-behavior: smooth;
         }
 
+        /* Hero/Header Section */
         header {
-            background: url('images/your-header-image.jpg') no-repeat center center/cover;
+            background: url('images/river-hero.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 150px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
         }
 
         section {
@@ -48,7 +59,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">MySite</a>
+            <a class="navbar-brand" href="#">Puerto Princesa River</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,15 +75,15 @@
 
     <!-- Header -->
     <header>
-        <h1>Welcome to My Website</h1>
-        <p class="lead">A simple one-page site using HTML, CSS, Bootstrap, and JavaScript</p>
+        <h1>Puerto Princesa Subterranean River</h1>
+        <p>The New 7 Wonders of Nature</p>
     </header>
 
     <!-- About Section -->
     <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>This section introduces you to the website or your topic. Add some text about your project, hobbies, or interests.</p>
-        <img src="images/about-image.jpg" class="img-fluid rounded" alt="About Image">
+        <h2>About the River</h2>
+        <p>The Puerto Princesa Subterranean River National Park is a UNESCO World Heritage Site in Palawan, Philippines. It is famous for its stunning limestone karst landscapes and navigable underground river.</p>
+        <img src="images/river-about.jpg" class="img-fluid rounded" alt="River Image">
     </section>
 
     <!-- Gallery Section -->
@@ -115,7 +126,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2026 MySite | All Rights Reserved
+        &copy; 2026 Puerto Princesa River | All Rights Reserved
     </footer>
 
     <!-- Bootstrap JS -->
