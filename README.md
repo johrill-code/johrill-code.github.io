@@ -191,7 +191,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2026 Puerto Princesa River | All Rights Reserved
+        &copy; 2026 Johrill | All Rights Reserved
     </footer>
 
     <!-- Bootstrap JS -->
